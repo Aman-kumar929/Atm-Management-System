@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    background-color: rgb(191, 249, 252);
+    display: grid;
+    place-items:center;   
+}
+
+
+.withdraw-container{
+    box-shadow: -15px 15px 30px rgb(87, 87, 87);
+    border-radius: 30px;
+}
+
+
+.withdraw-form {
+    width: 850px;
+    height: 450px;
+    background: linear-gradient(180deg, #016ec2, #024fb4);
+    padding: 35px 30px;
+    border-radius: 30px;
+    box-shadow:
+        inset 0 0 50px rgb(16 16 16 / 80%),
+        inset 0 0 90px rgb(14 14 14 / 15%);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.withdraw-form button{
+    width: 160px;
+    padding: 18px;
+    margin: 115px;
+    font-size: 25px;
+    color: rgb(229, 243, 255);
+    background-color: rgb(69, 199, 250);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: math;
+     box-shadow:
+        0 5px 10px #9c9c9c,
+        0 15px 15px rgba(0,0,0,0.5);
+    transition: all 0.15s ease; 
+}   
+
+
+.withdraw-form button:active{
+    transform: translateY(4px);
+    box-shadow:
+        0 2px 0 #9c9c9c,
+        0 6px 10px rgba(0,0,0,0.5);
+}
+
+
+.withdraw-form button:hover{
+    background-color: rgb(131, 219, 253);
+}
+
+
+/* ==============================Mobile Responsive============================ */
+
+
+@media (max-width: 1080px){
+
+    .withdraw-form {
+        width: 900px;
+        height: 1000px;
+        padding: 35px 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .withdraw-form button{
+        width: 300px;
+        padding: 20px;
+        margin-top: 190px;
+        font-size: 50px;
+    }   
+}

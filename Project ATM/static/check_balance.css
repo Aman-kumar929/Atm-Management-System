@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    background-color: rgb(191, 249, 252);
+    display: grid;
+    place-items:center;   
+}
+
+
+.balance-container{
+    box-shadow: -15px 15px 30px rgb(87, 87, 87);
+    border-radius: 30px;
+}
+
+
+.balance-form {
+    width: 850px;
+    height: 450px;
+    background: linear-gradient(180deg, #016ec2, #024fb4);
+    padding: 35px 30px;
+    border: px solid #838485;
+    border-radius: 30px;
+    box-shadow:
+        inset 0 0 50px rgb(16 16 16 / 80%),
+        inset 0 0 90px rgb(14 14 14 / 15%);
+    
+}
+
+
+
+.balance-form .error{
+    text-align:center;
+    list-style: none;
+    margin-top: 60px;
+    font-size: 30px;
+    font-family: math;
+    text-transform: uppercase;
+    color: #ff4d4d;
+}
+
+
+.balance-form h2{
+    color: rgb(254, 254, 255);
+    font-size: 45px;
+    margin: 35px;
+    font-family: math;
+    text-shadow: -10px 6px 8px rgba(9, 9, 9, 0.6); 
+    text-align: center;     
+}
+
+
+.balance-form input{
+    width: 60%;
+    padding: 8px;
+    margin: 50px 20px 0px 60px;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    background-color: rgb(253, 254, 254);
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: inset 0 3px 8px #6c6b6bc4,
+                inset -4px 0 8px #6c6b6bc4;
+}
+
+
+.balance-form button{
+    font-family: math;
+    text-align: center;
+    margin-left: 15px;
+    width: 160px;
+    padding:  22px 15px 8px 15px;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(69, 199, 250);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow:
+        0 5px 10px #9c9c9c,
+        0 15px 15px rgba(0,0,0,0.5);
+    transition: all 0.15s ease;   
+}
+
+
+.balance-form button:active {
+    transform: translateY(4px);
+    box-shadow:
+        0 2px 0 #9c9c9c,
+        0 6px 10px rgba(0,0,0,0.5);
+}
+
+.balance-form button:hover{
+    background-color: rgb(131, 219, 253);
+}
+
+
+/* ==============================Mobile Responsive============================ */
+
+
+@media (max-width: 1080px){
+
+    .balance-form {
+        width: 900px;
+        height: 1000px;
+        padding: 35px 30px;
+    }
+
+    .balance-form .error{
+        margin-top: 100px;
+        font-size: 50px;
+    }
+
+    .balance-form h2{
+        font-size: 90px;
+        margin: 100px;
+    }
+
+    .balance-form input{
+        width: 60%;
+        padding: 10px;
+        margin: 50px 20px 0px 60px;
+        font-size: 70px;
+    }
+
+    .balance-form button{
+        margin-left: 15px;
+        width: 200px;
+        padding:  30px 15px 8px 15px;
+        font-size: 50px;      
+    }
+}    

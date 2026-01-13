@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reset PIN</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='reset_new.css')}}">
+</head>
+<body>
+
+    <div class="new-pin-container">
+    <form method="POST" class="new-pin-form">
+        <h2>SET NEW PIN</h2>
+
+        <div class="row">
+        <h2> PIN:</h2>
+        <input type="password" name="pin" required><br>
+        </div>
+
+        <button type="submit">RESET PIN</button>
+    </form>
+    </div>
+
+</body>
+</html>
