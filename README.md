@@ -1,10 +1,10 @@
 # ATM Management System (Flask)
 
-A secure --ATM Management System-- built using --Flask--, --MySQL--, and --Twilio WhatsApp OTP--.  
+A secure **ATM Management System** built using **Flask**, **MySQL**, and **Twilio WhatsApp OTP**.  
 This project simulates basic ATM operations such as login via card number, balance check, cash withdrawal, and PIN reset using OTP.
 
 
-# Features
+## Features
 - Card number based login
 - Session-based authentication
 - Check savings & current account balance
@@ -13,7 +13,7 @@ This project simulates basic ATM operations such as login via card number, balan
 - Secure environment variable handling using '.env'
 
 
-# Tech Stack
+## Tech Stack
 - Backend: Python, Flask  
 - Database: MySQL  
 - Messaging: Twilio WhatsApp API  
