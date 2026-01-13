@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Balance</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='show_balance.css')}}">
+</head>
+<body>
+    <div class="show-balance-container">
+        <form class="show-balance-form">
+            <h2>ACCOUNT BALANCE</h2>
+
+            <p>Savings Balance: {{ session["savings_balance"] }}</p>
+            <p>Current Balance: {{ session["current_balance"] }}</p>
+
+            <br>
+
+            <a href="/menu">BACK</a>
+        </form>
+    </div>
+</body>
+</html>

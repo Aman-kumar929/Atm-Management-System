@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>card</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='card.css')}}">
+</head>
+<body>
+    <div class="card-container">
+    <form method="POST" class="card-form">
+        <h2>ENTER CARD</h2>
+        <input type="text" name="card" required><br>
+        <div class="error">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <p style="color:red;">{{ messages[0] }}</p>
+                {% endif %}
+            {% endwith %}
+        </div>
+        <button type="submit">DONE</button>
+    </form>
+    </div>
+</body>
+</html>
+
+

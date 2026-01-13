@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>menu</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='menu.css')}}">
+</head>
+<body>
+    <div class="menu-container">
+
+        <form method="post" class="menu-form">
+            <div class="left-button">
+                <!-- <a href="/new">NEW PIN</a> -->
+                <a href="/reset">RESET PIN</a>
+            </div>
+            <div class="right-button">
+                <button name="choice" value="withdraw">WITHDRAW</button>
+                <button name="choice" value="balance">BALANCE</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
